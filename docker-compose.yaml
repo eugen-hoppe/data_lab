@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  jupyter:
+    build: .
+    ports:
+      - "8040:8888"
+    volumes:
+      - ./lab:/home/jovyan/lab
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_TOKEN=local
