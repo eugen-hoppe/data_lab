@@ -21,4 +21,25 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Docker Container
+## 2. Docker Container
+
+### 2.1 Configure
+
+Create .env-file with following variables:
+
+```txt
+JUPYTER_TOKEN=local
+```
+
+### 2.1 Deploy
+
+```shell
+docker-compose up -d
+```
+
+### 2.2 Browser
+
+2.2.1 Open this link: http://localhost:8040
+
+2.2.2 Set password (optional) or enter Token: `local`
+
